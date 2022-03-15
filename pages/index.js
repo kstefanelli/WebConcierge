@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Avatar from '../components/Avatar';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <p className="link">Email</p>
           <p className="link">Images</p>
         </div>
+        <Avatar url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbodhicounseling.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fblank-profile-picture-973460_960_720-300x300.png&f=1&nofb=1" />
       </header>
     </div>
   );
