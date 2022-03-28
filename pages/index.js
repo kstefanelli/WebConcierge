@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Avatar from '../components/Avatar';
+import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid'
+import { SearchIcon } from '@heroicons/react/outline'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -19,9 +22,23 @@ export default function Home() {
         <div className="flex space-x-4 items-center">
           <p className="link">Email</p>
           <p className="link">Images</p>
+
+          <ViewGridIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer' />
+
           <Avatar url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbodhicounseling.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fblank-profile-picture-973460_960_720-300x300.png&f=1&nofb=1" />
         </div>
       </header>
+      <form>
+        <Image alt=''
+        src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2014%2F10%2FLogo-search.jpg&f=1&nofb=1'
+        height={100}
+        width={300}/>
+        <div>
+          <SearchIcon className='h-5 mr-3 text-gray-500'/>
+          <input type='text' className='focus:outline-none'/>
+          <MicrophoneIcon className='h-5 mr-3 text-gray-500' />
+        </div>
+      </form>
     </div>
   );
 }
