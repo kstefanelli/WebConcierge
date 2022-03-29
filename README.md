@@ -11,7 +11,7 @@ WebConcierge is a mock search engine.
 
 ## Introduction
 
-WebConcierge is a mock search engine. Developed with React.js, Next.js, and Tailwind CSS.
+WebConcierge is a mock search engine. Built with a mobile-first mindset supporting mobile, tablet, desktop, and 4k screens. Developed with React.js, Next.js, and Tailwind CSS.
 ## Getting Started
 
 Fork and clone this repo. Then, `yarn install`.
