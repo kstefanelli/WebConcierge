@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Avatar from '../components/Avatar';
-import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid'
-import { SearchIcon } from '@heroicons/react/outline'
+import { MicrophoneIcon, ViewGridIcon } from '@heroicons/react/solid';
+import { SearchIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 
 export default function Home() {
@@ -23,20 +23,26 @@ export default function Home() {
           <p className="link">Email</p>
           <p className="link">Images</p>
 
-          <ViewGridIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer' />
+          <ViewGridIcon className="h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer" />
 
           <Avatar url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbodhicounseling.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fblank-profile-picture-973460_960_720-300x300.png&f=1&nofb=1" />
         </div>
       </header>
-      <form>
-        <Image alt=''
-        src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2014%2F10%2FLogo-search.jpg&f=1&nofb=1'
-        height={100}
-        width={300}/>
-        <div>
-          <SearchIcon className='h-5 mr-3 text-gray-500'/>
-          <input type='text' className='focus:outline-none'/>
-          <MicrophoneIcon className='h-5 mr-3 text-gray-500' />
+      <form className='flex flex-col items-center mt-44 flex-grow'>
+        <Image
+          alt=""
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2014%2F10%2FLogo-search.jpg&f=1&nofb=1"
+          height={125}
+          width={275}
+        />
+        <div className="flex w-full mt-5 hover:shadow-lg focus-within:shawow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:m-w-xl lg:m-w-2xl">
+          <SearchIcon className="h-5 mr-3 text-gray-500" />
+          <input type="text" className="flex-grow focus:outline-none" />
+          <MicrophoneIcon className="h-5" />
+        </div>
+        <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
+          <button className='btn'>Search</button>
+          <button className='btn'>I'm Feeling Lucky</button>
         </div>
       </form>
     </div>
