@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import { XIcon, MicrophoneIcon, SearchIcon } from '@heroicons/react/solid';
 import Avatar from './Avatar';
+import HeaderOptions from './HeaderOptions';
 
 function Header() {
   const router = useRouter();
@@ -46,6 +47,7 @@ function Header() {
           url="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbodhicounseling.com%2Fwp-content%2Fuploads%2F2018%2F05%2Fblank-profile-picture-973460_960_720-300x300.png&f=1&nofb=1"
         />
       </div>
+      <HeaderOptions />
     </header>
   );
 }
