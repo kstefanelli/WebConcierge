@@ -25,8 +25,8 @@ function Header() {
         <Image
           alt=""
           src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2014%2F10%2FLogo-search.jpg&f=1&nofb=1"
-          height={90}
-          width={125}
+          height={75}
+          width={130}
           onClick={() => router.push('/')}
           className="cursor-pointer"
         />
