@@ -1,5 +1,5 @@
 <p align="center" style="font-style:italic">
-WebConcierge is a mock search engine.
+WebConcierge is a mock search engine. View deployed version here: https://web-concierge.vercel.app/
 </p>
 
 ## Table of Contents
